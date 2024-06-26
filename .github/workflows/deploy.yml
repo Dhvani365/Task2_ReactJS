@@ -17,16 +17,16 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Navigate to responsive-app directory
-        run: cd responsive-app
+      - name: Navigate to users-list directory
+        run: cd users-list
 
       - name: Install dependencies
         run: npm install
-        working-directory: responsive-app
+        working-directory: users-list
 
       - name: Build
         run: npm run build
-        working-directory: responsive-app
+        working-directory: users-list
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.2
