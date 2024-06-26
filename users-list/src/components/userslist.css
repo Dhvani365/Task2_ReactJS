@@ -1,0 +1,188 @@
+/* userslist.css */
+.light-body {
+    background-color: #ffffff;
+    color: #000000;
+}
+  
+.dark-body {
+    background-color: #000000;
+    color: #ffffff;
+}
+.dark-navbar{
+    background-color: #212529;
+    color: #ffffff;
+}
+.light-navbar{
+    background-color: #e2e3e5;
+    color: #000000;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+.toggle-switch-container{
+    margin-left: 50%;
+    align-self: right;
+}
+.users-container{
+    padding-top: 1%;
+}
+.users-list-title{
+    margin-left: 25%;
+}
+.users-list-display{    
+    max-width: 45%;
+    height: 50%;
+    max-height: 560px; 
+    overflow-y: auto;
+}
+.users-list-display :hover{
+    background-color: gainsboro;
+}
+/* User card styling */
+.user-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+/* Card body styling */
+.card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.dark-card {
+    background-color: #333; /* Dark background color for cards */
+    color: white; /* Text color for dark mode */
+    border: 1px solid #555; /* Optional: border color for cards */
+}
+  
+/* Card image styling */
+.card-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+  
+/* Loader container styling */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+/* Error container styling */
+.error-container, .no-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Card content styling */
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+.right-arrow-click{
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.no-profile-display {
+    border: 1px solid #dee2e6; 
+    border-radius: 0.25rem; 
+    padding: 1.25rem;
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    height: 400px;
+    margin: 20px auto;
+}
+
+/* Responsiveness */
+/* Responsive Design */
+@media (min-width: 768px) {
+    .search-textbox, .search-btn {
+      display: block; /* Show search bar for larger screens */
+    }
+}
+@media (max-width: 767.98px){
+        /* Styling Navbar */
+        .navbar-container {
+            flex-direction: row;
+            align-items: flex-start;
+          }
+        
+        .toggle-switch-container {
+            margin-bottom: 10px;
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+        .search-textbox{
+            display: none; 
+        }
+        .search-btn{
+            display: none;
+        }
+
+        /* Styling Card */
+        .users-list-display{
+            /* display: flex;
+            flex-direction: row;
+            padding-right: 50%;
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            overflow-x: visible; */
+            display: flex;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+            -webkit-overflow-scrolling: touch; 
+            padding: 10px;
+            max-width: 100%;
+        }
+        .users-list-display h5{
+            display: none;
+        }
+        .user-card {
+            flex: 0 0 auto; /* Allow cards to shrink to fit content */
+            width: calc(100% - 20px); /* Adjust card width (minus padding) */
+            margin-right: 10px; /* Space between cards */
+            border-radius: 8px; /* Rounded corners */
+            border: 1px solid #e0e0e0; /* Border around each card */
+            display: flex; /* Ensure flex layout */
+            flex-direction: column; /* Cards stacked vertically */
+        }
+        .card-body {
+            display: flex; /* Flex layout for card body */
+            align-items: center; /* Center items vertically */
+        }
+        .card-content {
+            display: flex; /* Flex layout for content */
+            flex-direction: column; /* Stack content vertically */
+            align-items: right; /* Center items horizontally */
+            text-align: right; 
+        }
+        .card-title{
+            font-size: 12px;
+        }
+        .card-text{
+            font-size: 10px;
+        }
+        .right-arrow-click{
+            height: 15%;
+            width: 15%;
+            margin-left: 70%;
+        }
+}
+  
