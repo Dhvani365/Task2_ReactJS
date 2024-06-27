@@ -38,7 +38,9 @@
     overflow-y: auto;
 }
 .users-list-display :hover{
-    background-color: gainsboro;
+    background-color: #333; 
+    color: white; 
+    transition: 0.3s;
 }
 /* User card styling */
 .user-card {
@@ -58,9 +60,9 @@
 }
   
 .dark-card {
-    background-color: #333; /* Dark background color for cards */
-    color: white; /* Text color for dark mode */
-    border: 1px solid #555; /* Optional: border color for cards */
+    background-color: #333;
+    color: white; 
+    border: 1px solid #555; 
 }
   
 /* Card image styling */
@@ -110,7 +112,6 @@
 }
 
 /* Responsiveness */
-/* Responsive Design */
 @media (min-width: 768px) {
     .search-textbox, .search-btn {
       display: block; /* Show search bar for larger screens */
@@ -137,13 +138,6 @@
 
         /* Styling Card */
         .users-list-display{
-            /* display: flex;
-            flex-direction: row;
-            padding-right: 50%;
-            width: 100%;
-            max-width: 100%;
-            padding: 10px;
-            overflow-x: visible; */
             display: flex;
             flex-wrap: nowrap; 
             overflow-x: auto; 
